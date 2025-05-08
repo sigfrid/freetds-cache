@@ -31,4 +31,4 @@ jobs:
 
       - name: Print path
         run: |
-          where freetds
+          which freetds
