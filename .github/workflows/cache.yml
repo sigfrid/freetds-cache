@@ -14,7 +14,7 @@ jobs:
       - name: Cache freetds
         uses: actions/cache@v4
         with:
-          path: ~/freetds-1.4.23
+          path: freetds-1.4.23
           key: ${{ runner.os }}-freetds-1.4.23
           restore-keys: |
             ${{ runner.os }}-freetds-1.4.23
