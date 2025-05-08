@@ -28,3 +28,7 @@ jobs:
           ./configure --prefix=/usr/local --with-tdsver=7.4 --disable-odbc
           sudo make
           sudo make install
+
+      - name: Print path
+        run: |
+          where freetds
