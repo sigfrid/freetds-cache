@@ -15,9 +15,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: freetds-1.4.23
-          key: ${{ runner.os }}-freetds-1.4.23
-          restore-keys: |
-            ${{ runner.os }}-freetds-1.4.23
+          key: freetds-1.4.23
+          restore-keys: freetds-1.4.23
 
       - name: Install freetds
         run: |
@@ -29,9 +28,4 @@ jobs:
           sudo make
           sudo make install
 
-      - name: Print Folder Tree
-        uses: jaywcjlove/github-action-folder-tree@main
-        with:
-          path: ~
-          depth: 4
 
