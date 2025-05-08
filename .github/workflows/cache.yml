@@ -29,3 +29,9 @@ jobs:
           sudo make
           sudo make install
 
+      - name: Print Folder Tree
+        uses: jaywcjlove/github-action-folder-tree@main
+        with:
+          path: ${GITHUB_WORKSPACE}
+          depth: 4
+
